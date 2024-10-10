@@ -20,30 +20,20 @@ body {
 
 .container {
   display: flex;
-  max-width: 100%;
-  max-width: 1200px;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 1440px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-image: url(../../images/bg-pattern-desktop.svg);
-  background-color: #faf5f5;
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: contain;
 }
 
 .left-section {
   flex: 1;
-  padding: 50px 30px 20px;
+  padding: 65.6px 220px 162px 165px;
   background: #faf5f5;
 }
 
-.logo {
-  padding: 20px 0 136px 68px;
-}
-
 .logo img {
-  width: 158px;
-  min-height: 90%;
+  width: 160px;
+  margin: 35px 0px 136px 0px;
 }
 
 h2 span {
@@ -59,37 +49,40 @@ h2 {
   font-weight: 500;
   letter-spacing: 17.32px;
   color: #423A3A;
-  padding: 0 0 32px 68px;
+  margin: 0 0 32px 0;
 }
 
 p {
   font-size: 16px;
   line-height: 1.75em;
   color: #CE9898;
-  /* margin-bottom: 30px; */
-  padding: 0 90px 0 68px;
+  max-width: 445px;
 }
 
 form {
   display: flex;
   align-items: center;
-  padding: 40px 0 0 68px;
+  margin: 40px 0 0 0;
 }
 
 input[type="email"] {
-  padding: 15px;
+  padding: 18px;
   border: 1px solid #CE9898;
   border-radius: 28px;
-  width: 80%;
+  width: 100%;
 }
 
 ::placeholder {
   color: #CE9898;
 }
 
+:focus-visible {
+  outline: 2px solid #F96464;
+}
+
 button {
-  padding: 15px 38px;
-  margin-left: -60px;
+  padding: 17px 41px;
+  margin-left: -50px;
   border: none;
   border-radius: 30px;
   background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
@@ -106,12 +99,12 @@ button:hover {
 }
 
 .right-section {
-  flex: 1;
   background-color: #faf5f5;
 }
 
 .right-section img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 610px;
   height: 100%;
   object-fit: cover;
 }
