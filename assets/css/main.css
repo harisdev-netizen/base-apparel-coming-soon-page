@@ -63,6 +63,7 @@ form {
   display: flex;
   align-items: center;
   margin: 40px 0 0 0;
+  position: relative;
 }
 
 input[type="email"] {
@@ -81,8 +82,9 @@ input[type="email"] {
 }
 
 button {
+  position: absolute;
   padding: 17px 41px;
-  margin-left: -50px;
+  margin-left: 378px;
   border: none;
   border-radius: 30px;
   background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
@@ -107,46 +109,4 @@ button:hover {
   max-width: 610px;
   height: 100%;
   object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .left-section {
-    padding: 20px;
-  }
-
-  .logo {
-    margin-bottom: 20px;
-  }
-
-  .right-section {
-    display: none;
-  }
-
-  .mobile-image {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  h2 span, h2 {
-    font-size: 36px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  input[type="email"] {
-    padding: 12px;
-  }
-
-  button {
-    padding: 12px 30px;
-    margin-left: 0;
-  }
 }
