@@ -87,7 +87,6 @@ button {
   border-radius: 30px;
   background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
   box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
-  border-radius: 28px;
   color: #FFFFFF;
   cursor: pointer;
   font-size: 18px;
@@ -98,8 +97,9 @@ button:hover {
   box-shadow: 0px 10px 20px rgba(238, 138, 138, 0.867);
 }
 
-.right-section {
-  background-color: #faf5f5;
+/* Hide mobile image and keep desktop image visible by default */
+.mobile-image {
+  display: none;
 }
 
 .right-section img {
@@ -107,4 +107,46 @@ button:hover {
   max-width: 610px;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-section {
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  h2 span, h2 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  input[type="email"] {
+    padding: 12px;
+  }
+
+  button {
+    padding: 12px 30px;
+    margin-left: 0;
+  }
 }
